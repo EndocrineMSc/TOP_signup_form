@@ -1,0 +1,158 @@
+@font-face {
+    font-family: pnp;
+    src: url(fonts/dragon-hunter-font/DragonHunter-9Ynxj.otf);
+}
+
+:root {
+    --form-section-padding: 100px;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+}
+
+.splash-section,.form-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 5vh;
+    height: 90vh;
+}
+
+.splash-section {
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-image: url("images/game_splash.jpg");
+    background-size: cover;
+}
+
+.logo-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 250px;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    height: 200px;
+    color: white;
+    font-size: 4rem;
+}
+
+.logo-text {
+    font-family: pnp, sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+#photo-credit {
+    position: relative;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    top: 35vh;
+}
+
+#photo-credit>a[href] {
+    color: white;
+}
+
+img.logo {
+    opacity: 1;
+    height: 50%;
+    width: auto;
+}
+
+.form-section {
+    width: 60%;
+    background-color: white;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-section .form-banner li {
+    font-weight: normal;
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+    margin: 8px;
+    margin-left: 0px;
+    padding: 10px;   
+    padding-left: 0px;
+}
+
+.form-section>p,.form-banner {
+    padding-left: var(--form-section-padding);
+    padding-right: var(--form-section-padding);
+} 
+
+.form-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 10px;
+    height: 400px;
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.144);
+    overflow: hidden;
+}
+
+form>button {
+    margin-top: 25px;
+    margin-left: var(--form-section-padding);
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #081e33;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+form>button:hover {
+    box-shadow: 0px 0px 5px 5px lightblue;
+}
+
+.input-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+input {
+    line-height: 1.5rem;
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+:focus,:invalid {
+    border: none;
+    outline: 3px solid;
+}
+
+:focus {
+    outline-color: blue;
+}
+
+:invalid {
+    outline-color: red;
+}
