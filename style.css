@@ -144,7 +144,7 @@ input {
     border-radius: 5px;
 }
 
-:focus,:invalid {
+:focus {
     border: none;
     outline: 3px solid;
 }
@@ -153,6 +153,12 @@ input {
     outline-color: blue;
 }
 
-:invalid {
-    outline-color: red;
+:invalid, [type="password"][error="error"] {
+    border: none;
+    outline: 3px solid red;
+}
+
+[type="password"][error="noerror"] {
+    border: none;
+    outline: 3px solid green;
 }
